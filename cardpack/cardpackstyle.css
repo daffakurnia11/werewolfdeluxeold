@@ -1,0 +1,205 @@
+@font-face {
+	font-family: 'Odin Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Odin Bold'), url('../Odin-Rounded.woff') format('woff');
+}
+*{
+	margin:0;
+	padding:0;
+	font-family:'Odin Bold';
+}
+/*--------------------------Navigation--------------------------*/
+.navbar-brand img{
+	height:60px;
+	padding-left:30px;
+	padding-right:15px;
+}
+.navbar-nav li{
+	padding: 0 10px;
+}
+.navbar-nav li a{
+	float: right;
+	text-align:left;
+}
+.navbar{
+	background:black;
+}
+.navbar-brand span{
+	color:#cfcfcf;
+	font-size:20pt;
+}
+.nav-link{
+	color:#cfcfcf;
+	font-weight:600;
+	font-size:16pt;
+}
+.textmain{
+	padding: 20px 15px;
+}
+.nav-link:hover{
+	text-decoration:none!important;
+	color:white;
+}
+/*--------------------------Header--------------------------*/
+#headerpage{
+	margin-top: 80px;
+	background-image: url(components/Header1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white!important;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#headerpage h1{
+	text-align:center;
+	font-size:32pt;
+	padding-bottom:10px;
+}
+#headerpage h1::after{
+	content: '';
+	background:white;
+	display:block;
+	height:3px;
+	width:200px;
+	margin:20px auto 5px;
+}
+.description{
+	text-align:center;
+	font-size:18pt;
+}
+/*--------------------------Card Pack List--------------------------*/
+#cardlist{
+	margin-top: 50px;
+}
+#cardlist .nav{
+	background-color: black;
+	border-radius: 5px;
+	border: 1px solid white;
+}
+#cardlist a.nav-link{
+	color: #cfcfcf!important;
+}
+#cardlist a.disabled{
+	color: #8c8c8c!important;
+}
+#cardlist a.nav-link:hover{
+	color: white!important;
+}
+/*--------------------------Card Pack Details--------------------------*/
+#carddetails{
+	margin-top: 30px;
+	color: white;
+}
+#carddetails h3{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.carddetails img{
+	width: 100%;
+}
+.alert{
+	margin-top: 10px;
+	background-color: #E75032;
+}
+#carddetails .werewolfside{
+	border: 1px solid #E75032;
+	border-radius: 3px;
+	background-color: #E75032;
+	color: black;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#carddetails .villagerside{
+	border: 1px solid #46E175;
+	border-radius: 3px;
+	background-color: #46E175;
+	color: black;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#carddetails .neutralside{
+	border: 1px solid #F9FE37;
+	border-radius: 3px;
+	background-color: #F9FE37;
+	color: black;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#carddetails .cultistside{
+	border: 1px solid #CFCFCF;
+	border-radius: 3px;
+	background-color: #CFCFCF;
+	color: black;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#carddetails .btn:hover{
+	box-shadow:0 2px 15px #8c8c8c;
+	color: #8c8c8c;
+}
+.listpack ul li{
+	border-bottom:1px solid #8c8c8c;
+	padding:10px 10px;
+	list-style:none;
+}
+#carddetails .badge{
+	background-color: #cfcfcf!important;
+	color:black;
+}
+.fa-check-circle{
+	color:#46e175;
+	margin-right:10px;
+	font-size:20px;
+}
+.fa-times-circle{
+	color:#e75032;
+	margin-right:10px;
+	font-size:20px;
+}
+.shoplogo img{
+	margin-bottom: 10px;
+}
+/*--------------------------Contact--------------------------*/
+#contact h1{
+	text-align:center;
+	padding-bottom:10px;
+	color:white!important;
+}
+#contact h1::after{
+	content: '';
+	background:white;
+	display:block;
+	height:3px;
+	width:140px;
+	margin:20px auto 5px;
+}
+#contact{
+	padding-top:40px;
+	padding-bottom:40px;
+	color:black;
+}
+.contact-form{
+	padding:15px;
+}
+.form-control{
+	border:none !important;
+	background-color:#cfcfcf!important;
+}
+::placeholder{
+	color:#8c8c8c!important;
+}
+.follow{
+	background:#cfcfcf;
+	padding:10px;
+	margin:15px;
+	border-radius:4px;
+}
+.linkig{
+	text-decoration: none!important;
+	color: black;
+}
+.linkig:hover{
+	color: #8c8c8c;
+}
