@@ -1,0 +1,211 @@
+@font-face {
+	font-family: 'Odin Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Odin Bold'), url('Odin-Rounded.woff') format('woff');
+}
+*{
+	margin:0;
+	padding:0;
+	font-family:'Odin Bold';
+}
+/*--------------------------Navigation--------------------------*/
+.navbar-brand img{
+	height:60px;
+	padding-left:30px;
+	padding-right:15px;
+}
+.navbar-nav li{
+	padding: 0 10px;
+}
+.navbar-nav li a{
+	float: right;
+	text-align:left;
+}
+.navbar{
+	background:black;
+}
+.navbar-brand span{
+	color:#cfcfcf;
+	font-size:20pt;
+}
+.nav-link{
+	color:#cfcfcf;
+	font-weight:600;
+	font-size:16pt;
+}
+.textmain{
+	padding: 20px 15px;
+}
+.nav-link:hover{
+	text-decoration:none!important;
+	color:white;
+}
+/*--------------------------Header--------------------------*/
+#headerpage{
+	margin-top: 80px;
+	background-image: url(image/CardPackHeader.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white!important;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#headerpage h1{
+	text-align:center;
+	font-size:32pt;
+	padding-bottom:10px;
+}
+#headerpage h1::after{
+	content: '';
+	background:white;
+	display:block;
+	height:3px;
+	width:200px;
+	margin:20px auto 5px;
+}
+.description{
+	text-align:center;
+	font-size:18pt;
+}
+/*--------------------------Price List--------------------------*/
+#price{
+	padding:40px 0;
+	background:black;
+}
+#price h1{
+	text-align:center;
+	padding-bottom:10px;
+}
+#price h1::after{
+	content: '';
+	background:white;
+	display:block;
+	height:3px;
+	width:140px;
+	margin:20px auto 5px;
+}
+.single-price{
+	margin:10px auto;
+	display:inline;
+	float:left;
+	width:100%;
+	color:#cfcfcf;
+}
+.single-price:hover{
+	box-shadow:0 1px 10px #8c8c8c;
+}
+.price-head{
+	background-color:#cfcfcf;
+	display:inline;
+	float:left;
+	padding:10px 5px;
+	text-align:center;
+	width:100%;
+	color:black;
+}
+.price-head h2{
+	font-size:20pt;
+	margin-bottom:5px;
+	padding:5px;
+}
+.price-head p{
+	font-size:14pt;
+}
+.price-head span{
+	font-size:10pt;
+}
+.price-content{
+	display:inline;
+	float:left;
+	width:100%;
+	padding:0 15px;
+}
+.price-content ul li{
+	border-bottom:1px solid #8c8c8c;
+	padding:10px 10px;
+	list-style:none;
+}
+ul li:last-child{
+	border:none;
+}
+#price .badge{
+	background-color: #cfcfcf!important;
+	color:black;
+}
+.fa-check-circle{
+	color:#46e175;
+	margin-right:10px;
+	font-size:20px;
+}
+.fa-times-circle{
+	color:#e75032;
+	margin-right:10px;
+	font-size:20px;
+}
+.price-button{
+	display:inline;
+	float:left;
+	padding:15px 15px 30px;
+	text-align:center;
+	width:100%;
+}
+.buy-btn{
+	color:black;
+	background-color:#cfcfcf;
+	border-radius:5px;
+	display:inline-block;
+	font-size:14pt;
+	padding:15px 50px;
+}
+.buy-btn:hover{
+	background-color:#8c8c8c;
+	color:black;
+}
+a.buy-btn{
+	text-decoration:none!important;
+	color:black;
+}
+/*--------------------------Contact--------------------------*/
+#contact h1{
+	text-align:center;
+	padding-bottom:10px;
+	color:white!important;
+}
+#contact h1::after{
+	content: '';
+	background:white;
+	display:block;
+	height:3px;
+	width:140px;
+	margin:20px auto 5px;
+}
+#contact{
+	padding-top:40px;
+	padding-bottom:40px;
+	color:black;
+}
+.contact-form{
+	padding:15px;
+}
+.form-control{
+	border:none !important;
+	background-color:#cfcfcf!important;
+}
+::placeholder{
+	color:#8c8c8c!important;
+}
+.follow{
+	background:#cfcfcf;
+	padding:10px;
+	margin:15px;
+	border-radius:4px;
+}
+.linkig{
+	text-decoration: none!important;
+	color: black;
+}
+.linkig:hover{
+	color: #8c8c8c;
+}

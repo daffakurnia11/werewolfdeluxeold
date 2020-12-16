@@ -1,0 +1,281 @@
+<html>
+	<head>
+		<title>Werewolf Deluxe Indonesia</title>
+		<link rel="stylesheet" href="gamemodestyle.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body style="background-color:black">
+		<!-----------------NavigationBar----------------->
+		<section id="nav-bar">
+			<nav class="navbar navbar-expand-lg fixed-top" >
+				<a class="navbar-brand" href="../index.html"><img src="../image/Logo.png"><span>Werewolf Deluxe</span></a>
+				<button class="bg-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="textmain">Main Menu</span>
+  				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-item nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-item nav-link" href="../howtoplay.html">How To Play</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-item nav-link" href="../character.html">Character</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-item nav-link" href="../cardpack.html">Card Pack</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-item nav-link" href="../gamemode.html">Game Mode</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+		<!-----------------Header----------------->
+		<section id="headerpage">
+			<div class="container">
+				<h1>Game Mode</h1>
+				<p class="description">Customized game mode is coming for you. Enter the number of players and adjust your gameplay level then it won’t take time to decide the beginning of the game.</p>
+			</div>
+		</section>
+		<!-----------------Game Mode----------------->
+		<section id="gamemode">
+			<div class="container">
+				<h1 class="gamemodetitle">
+					Welcome to the Hard Mode!
+				</h1>
+				<div class="alert text-center" role="alert">
+					This mode only works on <strong>Lite Version Card Pack</strong> and support <strong>a maximum of 21 players</strong>.
+				</div>
+				<div class="gamemodenum text-center" style="margin-bottom: 20px;">
+					<p style="font-size: 30px; margin-top: 20px;">How many players do you have?</p>
+					<button type="button" class="btn btn-dark" id="dec" onclick="countmin()">-</button>
+					<p id="numplayer" class="d-inline" style="font-size: 15px; margin: 0px 20px;">7</p>
+					<button type="button" class="btn btn-dark" id="inc" onclick="countplus()">+</button>
+				</div>
+				<p class="text-center" style="font-size: 20px; margin-bottom: 30px;">Here is the composition of the character that needs <span id="descnumber">7</span> players.</p>
+				<section id="charLists">
+					<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4">
+							<button class="btn moderator" type="button" data-toggle="collapse" data-target="#moderator" aria-expanded="false" aria-controls="moderator">
+								Moderator
+						    </button>
+						    <div class="collapse show" id="moderator">
+							    <ul class="list-group list-group-flush">
+								    <li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+									    <span class="bluetext">Moderator</span>
+									    <span id="nummoderator" class="badge badge-pill">1
+                                        </span>
+								    </li>
+							    </ul>
+						    </div>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+					<div class="row cardList">
+						<div class="col-md-3">
+							<button class="btn werewolfSide" type="button" data-toggle="collapse" data-target="#werewolfSide" aria-expanded="false" aria-controls="werewolfSide">
+	   							Werewolf Side
+	  						</button>
+	  						<div class="collapse show" id="werewolfSide">
+	  							<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Werewolf</span>
+										<span id="numwerewolf" class="badge badge-pill">2</span>
+									</li>
+		 							<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Alpha Wolf</span>
+										<span id="numalphawolf" class="badge badge-pill"></span>
+									</li>
+		 							<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Lone Wolf</span>
+										<span id="numlonewolf" class="badge badge-pill"></span>
+									</li>
+		 							<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Wolf Cub</span>
+										<span id="numwolfcub" class="badge badge-pill"></span>
+									</li>
+		 							<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Cursed</span>
+										<span id="numcursed" class="badge badge-pill"></span>
+									</li>
+		 							<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Wild Child</span>
+										<span id="numwildchild" class="badge badge-pill"></span>
+									</li>
+		 							<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Traitor</span>
+										<span id="numtraitor" class="badge badge-pill"></span>
+									</li>
+		 							<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="redtext">Sorcerer</span>
+										<span id="numsorcerer" class="badge badge-pill"></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<button class="btn villagerSide" type="button" data-toggle="collapse" data-target="#villagerSide" aria-expanded="false" aria-controls="villagerSide">
+	   							Villager Side
+	  						</button>
+	  						<div class="collapse show" id="villagerSide">
+	  							<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Seer</span>
+										<span class="badge badge-pill">1</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Apprentice Seer</span>
+										<span id="numappseer" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Dark Seer</span>
+										<span id="numdarkseer" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Detective</span>
+										<span id="numdetective" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Investigator</span>
+										<span id="numinvestigator" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Bodyguard</span>
+										<span id="numbodyguard" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Mason</span>
+										<span id="nummason" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Villager</span>
+										<span id="numvillager" class="badge badge-pill">2</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Chef</span>
+										<span id="numchef" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Volunteer</span>
+										<span id="numvolunteer" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Cultist Hunter</span>
+										<span id="numculhunter" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="greentext">Harlot</span>
+										<span id="numharlot" class="badge badge-pill"></span>
+									</li>
+	  							</ul>
+	  						</div>
+						</div>
+						<div class="col-md-3">
+							<button class="btn noSide" type="button" data-toggle="collapse" data-target="#noSide" aria-expanded="false" aria-controls="noSide">
+	   							No Side
+	  						</button>
+	  						<div class="collapse show" id="noSide">
+	  							<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Cupid</span>
+										<span id="numcupid" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Bomber</span>
+										<span id="numbomber" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Doppelganger</span>
+										<span id="numdoppelganger" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Diviner</span>
+										<span id="numdiviner" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Drunk</span>
+										<span id="numdrunk" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Troublemaker</span>
+										<span id="numtroublemaker" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Hunter</span>
+										<span id="numhunter" class="badge badge-pill">1</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Pyro</span>
+										<span id="numpyro" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Tanner</span>
+										<span id="numtanner" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Trapper</span>
+										<span id="numtrapper" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Gladiator</span>
+										<span id="numgladiator" class="badge badge-pill"></span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="yellowtext">Serial Killer</span>
+										<span id="numserialkiller" class="badge badge-pill"></span>
+									</li>
+	  							</ul>
+	  						</div>
+						</div>
+						<div class="col-md-3">
+							<button class="btn cultistSide" type="button" data-toggle="collapse" data-target="#cultistSide" aria-expanded="false" aria-controls="cultistSide">
+	   							Cultist
+	  						</button>
+	  						<div class="collapse show" id="cultistSide">
+	  							<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between align-items-center align-middle">
+										<span class="silvertext">Cultist</span>
+										<span id="numcultist" class="badge badge-pill"></span>
+									</li>
+	  							</ul>
+	  						</div>
+						</div>
+					</div>
+				</section>	
+			</div>
+		</section>
+		<!-----------------Contact----------------->
+		<section id="contact">
+			<div class="container">
+				<h1>Contact Us</h1>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="follow"><strong>Address : </strong>Surabaya, Jawa Timur, Indonesia</div>
+						<div class="follow"><strong>Email : </strong> wwdeluxe@gmail.com</div>
+					</div>
+					<div class="col-md-6 contact-info">
+						<div class="follow"><strong>Phone : </strong> +62 822 4583 8380</div>
+						<div class="follow"><strong>Instagram : </strong><a href="https://www.instagram.com/werewolfdeluxe.store/" class="linkig">@werewolfdeluxe.store</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-----------------Copyright----------------->
+		<section id="copyright">
+			<div class="container text-center">
+				<p>&copy 2020 by Werewolf Deluxe, All rights reserved</p>
+			</div>
+		</section>
+		<script src="./hardmode.js"></script>
+	</body>
+</html>
